@@ -1,0 +1,15 @@
+/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ Custom styles for this project
+ */
+
+.jumbotron {
+    position: relative;
+    background: #ffffff url("../images/bckgrnd_stgt.png") center center;
+    width: 100%;
+    height: 100%;
+	background-size: cover;
+	overflow: hidden;
+	margin-top: -20px;
+}
+

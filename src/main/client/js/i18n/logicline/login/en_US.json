@@ -1,9 +1,0 @@
-{
-  "LOGIN_HEADLINE"             : "Log on to logicline Customer Service",
-  "LOGIN_SUBHEADLINE"          : "Please enter your credentials.",
-  "LOGIN_ERROR"                : "Wrong credentials.",
-  "LOGIN_LOCK_ERROR"           : "The log in is locked. Please try again in {{minutes}} minutes.",
-
-  "LOGIN_FORM_ORGANIZATION_ID" : "Organization ID *",
-  "LOGIN_FORM_PASSWORD"        : "Password *"
-}

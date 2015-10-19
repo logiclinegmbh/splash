@@ -1,9 +1,0 @@
-{
-  "LOGIN_HEADLINE"             : "Anmelden zum logicline Customer Service",
-  "LOGIN_SUBHEADLINE"          : "Bitte geben Sie Ihre Anmeldedaten ein.",
-  "LOGIN_ERROR"                : "Anmeldung fehlgeschlagen.",
-  "LOGIN_LOCK_ERROR"           : "Die Anmeldeseite wurde gesperrt. Bitte probieren Sie in {{minutes}} Minuten erneut.",
-
-  "LOGIN_FORM_ORGANIZATION_ID" : "Organisations-ID *",
-  "LOGIN_FORM_PASSWORD"        : "Passwort *"
-}
