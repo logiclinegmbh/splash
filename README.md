@@ -1,9 +1,9 @@
-# splash
+# splash 
 Heroku button template for a simple contact management app. </br></br>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-## API Specification
+## REST API Specification v2 (for calling the Java Backend) 
 
 ###Login and get a User Token back (like v1)
 - Request: http://localhost:8080/logiclineportal/user/login
