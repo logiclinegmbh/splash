@@ -56,7 +56,7 @@
           <span class="input-reset display--inline cursor--pointer" ng-click="resetPassword(userInformation.userIdFk);"></span>
         </p>
         <p class="content--text" ng-show="isReseted">
-          <span class="help--success"> &nbsp;&nbsp;&nbsp;&nbsp;{{'USER_EDIT_PS_SUCCESS' | translate}}</span>
+          <span class="help--success"> &nbsp;&nbsp;&nbsp;&nbsp;{{'USER_EDIT_PS_SUCCESS' | translate}}&nbsp;({{res.username}} : {{res.password}})</span>
         </p>
       </div>
     </div>
@@ -64,7 +64,7 @@
     <div class="row">
       <div class="small-12 columns spacing--top--20">
         <!-- Start: Buttons -->
-        <input type="button" class="small-5 medium-2 columns cursor--pointer btn btn--cancel" ng-click="goTo(referrer);" value="{{ 'BTN_CANCEL' | translate }}"/>
+        <input type="button" class="small-5 medium-2 columns cursor--pointer btn btn--cancel" ng-click="cancelEdit();" value="{{ 'BTN_CANCEL' | translate }}"/>
         <input type="submit" value="{{ 'BTN_SAVE' | translate }}" class="small-5 medium-2 medium-pull-1 columns spacing--left--20 cursor--pointer btn btn--submit" />
         <!-- End: Buttons -->
       </div>

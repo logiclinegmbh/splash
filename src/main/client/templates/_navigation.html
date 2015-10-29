@@ -5,25 +5,6 @@
         ng-click="goTo(isSearchActive? 'customer_search_view': 'dashboard');">
       {{ 'NAVIGATION_DASHBOARD' | translate }}
     </li>
-
-    <li class="small-12 large-3 columns text--left cursor--pointer" access="Admin,CSC Admin" access-is-rendered="FALSE" ng-if="!isSearchActive"
-        ng-class="{ 'active': $state.includes('customer_search') || $state.includes('customer_search_view')}" ng-click="goTo('customer_search');">
-      {{ 'NAVIGATION_SEARCH_CUSTOMER' | translate }}
-    </li>
-    <li class="small-12 large-3 columns text--left cursor--pointer" access="Admin,CSC Admin" access-is-rendered="FALSE" ng-if="!isSearchActive"
-        ng-class="{ 'active': $state.includes('customer_create')}" ng-click="goTo('customer_create');">
-      {{ 'NAVIGATION_CREATE_CUSTOMER' | translate }}
-    </li>
-    <!-- 
-    <li class="small-12 medium-2 large-2 columns text--left cursor--pointer" access="Admin" access-is-rendered="FALSE" ng-if="!isSearchActive"
-        ng-class="{ 'active': $state.includes('customer_upload')}" ng-click="goTo('customer_upload');">
-      {{ 'NAVIGATION_UPLOAD_CUSTOMER' | translate }}
-    </li>
-     -->
-    <li class="small-12 large-3 text--left columns cursor--pointer" access="User" access-is-rendered="FALSE"
-      ng-class="{'active': $state.includes('customer_edit')}" ng-click="goTo('user_edit', {userId: userIdFk});">
-      {{ 'NAVIGATION_PERSONAL_DATA' | translate }}
-    </li>
     <li class="hidden"></li>
   </ul>
 </nav>

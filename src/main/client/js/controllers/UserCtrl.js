@@ -28,4 +28,11 @@ function($rootScope, $scope, apiUserService) {
         $scope.res = res;
     });
   };
+  
+  $scope.cancelEdit = function(userId) {
+	delete $rootScope.searchUserIdFk;
+	delete $rootScope.isSearchActive;		
+
+	$scope.$state.go('dashboard');
+};
 }]);

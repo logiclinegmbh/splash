@@ -39,25 +39,13 @@
 
 			<div
 				class="small-12 medium-3 columns box box--cerulean cursor--pointer"
-				ng-click="goTo('user_edit', {userId: userIdFk});" access="CSC Admin"
-				access-is-rendered="FALSE">
+				ng-click="goTo('user_edit', {userId: userIdFk});" access-is-rendered="FALSE">
 				<p class="box__headline">{{
 					'DASHBOARD_BOX_PERSONAL_DATA_HEADLINE' | translate }}</p>
 				<p class="box__content">{{ 'DASHBOARD_BOX_PERSONAL_DATA_CONTENT'
 					| translate }}</p>
 			</div>
 
-			<div class="show-for-small-only small-12 columns">&nbsp;</div>
-
-			<div
-				class="small-12 medium-3 columns box box--cerulean cursor--pointer"
-				ng-click="goTo('user_edit', {userId: userIdFk});" access="User,Admin"
-				access-is-rendered="FALSE">
-				<p class="box__headline">{{
-					'DASHBOARD_BOX_PERSONAL_DATA_HEADLINE' | translate }}</p>
-				<p class="box__content">{{ 'DASHBOARD_BOX_PERSONAL_DATA_CONTENT'
-					| translate }}</p>
-			</div>
 		</div>
 
 		<!-- End: Dashboard -->
