@@ -21,7 +21,7 @@ public interface UserService {
 
 	public void updateUserInfoByUserId(Integer userId, ContactDto contactDto);
 
-	public String updatePassword(Integer userId);
+	public UserEntity updatePassword(Integer userId);
 
 	public Map<Integer, String> getCustomerIdMap();
 

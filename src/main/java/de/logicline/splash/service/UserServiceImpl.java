@@ -115,12 +115,12 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Transactional
-	public String updatePassword(Integer userId) {
+	public UserEntity updatePassword(Integer userId) {
 		String password = new PasswordGenerator().generatePswd(10, 10, 2, 2, 2);
 		UserEntity userForUpdate = userDao.find(userId);
 		userForUpdate.setPassword(password);
 		userDao.edit(userForUpdate);
-		return password;
+		return userForUpdate;
 
 	}
 }

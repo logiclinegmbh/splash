@@ -109,13 +109,16 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "/user/edit/password/{userId}", method = RequestMethod.POST)
-	public @ResponseBody String updateUserPassword(
+	public @ResponseBody Map<String, String> updateUserPassword(
 			@PathVariable("userId") Integer userId, HttpServletRequest request,
 			HttpServletResponse response) {
 
-		String newPassword = userService.updatePassword(userId);
+		Map<String, String> responseMap = new HashMap<String, String>();
+		UserEntity userEntity = userService.updatePassword(userId);
 
-		return newPassword;
+		responseMap.put("username", userEntity.getUsername());
+		responseMap.put("password", userEntity.getPassword());
+		return responseMap;
 	}
 
 	@RequestMapping(value = "/user/edit/{userId}", method = RequestMethod.GET)
