@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- <link rel="shortcut icon" href="assets/ico/favicon.ico"> -->
+
+<title>SPLASH</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:600,300italic'; rel='stylesheet' type='text/css'>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/styles.css" rel="stylesheet">
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>;
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>;
+<![endif]-->
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html">Splash</a>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li><a href="architecture.html">Architecture</a></li>
+<li><a href="setup.html">Setup</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a
+href="https://github.com/logiclinegmbh/Splash"><img
+src="images/icon-github.png" style="border: none;margin: -4px 0;height: 28px;width: 28px;"/>
+GitHub
+Project</a></li>
+</ul>
+</div><!--/.nav-collapse -->
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<h1>Setup</h1>
+<h3>Deploying to Heroku using the Heroku Button</h3>
+<hr>
+<p> You can deploy your own version of Splash using deploy on heroku button using the button bellow:</p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/logiclinegmbh/splash"><img src="https://www.herokucdn.com/deploy/button.png"; alt="Deploy"></a></p>
+<br>
+
+<h3>Deploying to Heroku using the command line</h3>
+<hr>
+<p>You can also deploy Splash on heroku using command line with the steps bellow:</p>
+
+<ol>
+<li><p>Heroku login (using your Heroku credentials: Email and Password)</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ heroku login</code></pre></div></li>
+<li><p>Clone the repository on GitHub</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git clone https://github.com/logiclinegmbh/splash
+</code></pre></div></li>
+<li><p>Create a Heroku application</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd splash
+$ heroku create</code></pre></div></li>
+<li><p>Install the Heroku Postgress Add-on</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ heroku addons: add heroku-postgresql:hobby-dev
+</code></pre></div></li>
+<li><p>Add buildpacks</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ heroku buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-nodejs
+$ heroku buildpacks:add --index 2 https://github.com/heroku/heroku-buildpack-java</code></pre></div></li>
+<li><p>Deploy to Heroku</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ git push heroku master
+</code></pre></div></li>
+<li><p>Run the the application:</p>
+
+<ul>
+<li><p>Open the application in a browser:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ heroku open
+</code></pre></div></li></ul></li>
+
+<li><p>And then you can see your application running in your browser.
+For further reading you can also take a look at <a href="https://devcenter.heroku.com/categories/java">heroku devcenter</a>.</p></li></ol>
+
+<br>
+<hr>
+<div>
+<h3>Setup Heroku - Step 1</h3>
+<img src="images/setup/Deploy_1.jpg"/>
+<h3>Setup Heroku - Step 2</h3>
+<img src="images/setup/Deploy_2.jpg"/>
+</div>
+    
+    
+<div class="row" style="padding-top: 4px;">
+</div>
+    
+</div>
+<div class="row" style="padding-top: 14px;">
+</div>
+
+<div class="container" style="border-top: 1px solid #ccc;">
+    <div id="footer">
+        <p class="text-muted"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>  logicline GmbH, 2015, <a href="http://www.logicline.de">www.logicline.de</a></p>
+    </div>    <!-- Site footer -->
+</div>
+
+
+<script src="lib/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
