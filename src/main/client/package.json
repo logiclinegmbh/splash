@@ -2,6 +2,9 @@
   "name": "logicline",
   "version": "1.0.0",
   "description": "logicline",
+  "engines": {
+    "node": "0.12.1"
+  },
   "dependencies": {
     "bower": "*",
     "express": "*",
