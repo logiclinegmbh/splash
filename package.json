@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "bower": "*",
-    "imagemin": "3.2.1",
+    "imagemin": "4.0.0",
     "grunt": "*",
     "grunt-cli": "*",
     "grunt-contrib-clean": "^0.6.0",
