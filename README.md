@@ -360,7 +360,7 @@ Example:
 }
 - Response Data:
 
-## Version
+## License
 
 Orientation is MIT licensed. See [LICENSE](LICENSE) for details.
 
