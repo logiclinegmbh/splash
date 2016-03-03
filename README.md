@@ -12,7 +12,9 @@ username: user1
 password: user1
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+<a href="https://heroku.com/deploy?template=https://github.com/logiclinegmbh/splash">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
 
 
 ## REST API Specification v2 (for calling the Java Backend) 
